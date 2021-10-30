@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* O comando abaixo, evita que o padding afete largura e altura */
+    box-sizing: border-box; 
+  }
+  
+  header {
+    background-color: #63102C;
+    color: #FFFFFF;
+    padding: 64px;
+  }
+  
+  nav {
+    background-color: #342238;
+    color: #FFFFFF;
+  }
+  
+  aside {
+    background-color: #DFAF07;
+  }
+  
+  main {
+    background-color: #02A0C7;
+    padding: 32px;
+  }
+  
+  aside, main { 
+    padding: 32px; 
+    height: 585px;
+  }
+  
+  footer {
+    background-color: #092437;
+    color: #FFFFFF;
+    padding: 24px;
+  }
+  
+  code {
+    font-size: 18pt;
+  }
+  
+  
+  /************
+  * NAVEGAÇÃO *
+  *************/
+  .navbar {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .navbar li {
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar a {
+    font-family: sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: yellow;
+    text-decoration: underline;
+  }
+  
+  
+  @media all and (min-width: 768px) {
+  
+    .navbar {
+      flex-flow: row wrap;
+      justify-content: flex-end;
+    }
+    
+    #container {
+      display: flex;
+    }
+    
+    main {
+      flex: 75%;
+    }
+    
+    aside {
+      flex: 25%;
+    }  
+  }
+  
